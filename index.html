@@ -1,0 +1,96 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ika Made Easy with Ika-chan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bg-gray-800 py-4 text-center">
+        <img id="ika-logo" src="https://i.postimg.cc/26QJ7F4B/obxk-M0-Ch-400x400.png" alt="Ika Logo" class="h-16 mx-auto">
+    </header>
+
+<!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-600 to-purple-600 py-16 text-center">
+        <h1 class="text-5xl font-bold">Ika Made Easy</h1>
+        <p class="mt-4 text-xl">Explore Ika with Ika-chan!</p>
+        <div class="relative inline-block mt-8">
+            <img id="ika-chan" src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan Mascot" class="h-48 mx-auto">
+            <div class="speech-bubble absolute top-1/2 left-3/4 transform -translate-y-1/2 translate-x-4 bg-white text-black p-4 rounded-lg shadow-lg">
+                <p>Hi, I’m Ika-chan! Let’s explore Ika together! 🚀</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto py-12 px-4">
+        <!-- What is Ika? -->
+        <section class="mb-12 flex items-start">
+            <img src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-24 mr-4">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-400 mb-4">What is Ika?</h2>
+                <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                    <p>Imagine a galaxy where blockchain planets (like Bitcoin, Ethereum) don’t talk to each other. Ika is like a super-fast, secure courier service that connects them, letting assets zoom between planets safely without middlemen!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- dWallets -->
+        <section class="mb-12 flex items-start">
+            <img src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-24 mr-4">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-400 mb-4">Why dWallets Rock</h2>
+                <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                    <p>dWallets are like smart space vaults. They hold your assets (BTC, ETH, etc.) and follow rules you set, like “only send funds if my friends approve.” They work across all blockchain planets and are super secure!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2PC-MPC Protocol -->
+        <section class="mb-12 flex items-start">
+            <img src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-24 mr-4">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-400 mb-4">The 2PC-MPC Magic</h2>
+                <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                    <p>Think of 2PC-MPC as a spaceship crew splitting a secret code. No one person has the full code, so no one can steal it. They work together to unlock the vault only when you say so, keeping everything safe!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="mb-12 flex items-start">
+            <img src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-24 mr-4">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-400 mb-4">Ika in Action</h2>
+                <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                    <p>Ika powers space stations like DeFi (trading without banks), DAOs (community-run groups), and atomic swaps (trading BTC for ETH directly). It’s fast, secure, and makes blockchain life easier!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-400 mb-4">Test Your Ika IQ with Ika-chan!</h2>
+            <div class="p-6 bg-gray-800 rounded-lg">
+                <p class="mb-4">What’s a dWallet?</p>
+                <button class="quiz-btn px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 mr-2" data-answer="wrong">A digital coin</button>
+                <button class="quiz-btn px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 mr-2" data-answer="correct">A secure, programmable wallet</button>
+                <button class="quiz-btn px-4 py-2 bg-blue-600 rounded hover:bg-blue-700" data-answer="wrong">A blockchain</button>
+                <p id="quiz-result" class="mt-4 text-lg"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center">
+        <img src="" alt="Ika Logo" class="h-12 mx-auto mb-2">
+        <p>Built with ❤️ for Ika enthusiasts | Guided by Ika-chan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

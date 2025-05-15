@@ -1,0 +1,55 @@
+<!-- styles.css -->
+body {
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.speech-bubble {
+    width: 200px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+#ika-chan {
+    transition: transform 0.3s;
+}
+
+#ika-chan:hover {
+    transform: scale(1.1);
+}
+
+.bounce {
+    animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#ika-logo {
+    transition: transform 0.3s;
+}
+
+#ika-logo:hover {
+    transform: rotate(360deg);
+}
