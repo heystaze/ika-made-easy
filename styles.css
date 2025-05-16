@@ -1,55 +1,105 @@
-<!-- styles.css -->
+/* styles.css */
 body {
-    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') #1a202c; /* Fallback bg color */
     font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling for nav links */
 }
 
+/* Sticky header already handled by Tailwind's 'fixed' and 'z-50' */
+
 .card {
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* Slightly more lift */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0,0,0,0.25); /* Enhanced shadow */
 }
 
+/* Speech Bubble for Ika-chan */
 .speech-bubble {
-    width: 200px;
+    width: 220px; /* Slightly wider */
     font-size: 1rem;
-    color: #333;
+    color: #1f2937; /* Darker text for better contrast on white */
+    position: relative; /* Ensure it's positioned correctly relative to mascot */
 }
 
 .speech-bubble::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: -10px; /* Position arrow to the left */
+    transform: translateY(-50%);
     border-width: 10px;
     border-style: solid;
-    border-color: white transparent transparent transparent;
+    border-color: transparent white transparent transparent; /* Arrow pointing left */
 }
 
-#ika-chan {
-    transition: transform 0.3s;
+/* Ika-chan Mascot Styling */
+#ika-chan-hero, .ika-chan-section-icon, #ika-chan-quiz {
+    transition: transform 0.4s ease-in-out;
 }
 
-#ika-chan:hover {
-    transform: scale(1.1);
+#ika-chan-hero:hover, .ika-chan-section-icon:hover, #ika-chan-quiz:hover {
+    transform: scale(1.15); /* Slightly more zoom on hover */
 }
 
 .bounce {
-    animation: bounce 1s ease-in-out;
+    animation: bounce 1.5s ease-in-out infinite; /* Make bounce loop */
 }
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-12px); } /* Increased bounce height */
 }
 
+/* Ika Logo in Header/Footer */
 #ika-logo {
-    transition: transform 0.3s;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Funky rotation */
 }
 
 #ika-logo:hover {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1.1);
+}
+
+/* Navigation links */
+header nav a {
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block; /* Allows transform */
+}
+
+header nav a:hover {
+    color: #60a5fa; /* Brighter blue from Tailwind */
+    transform: translateY(-2px);
+}
+
+/* Secondary Accent Color (Teal for use case titles) */
+.text-teal-300 {
+    color: #5eead4; /* Example: Tailwind teal 300 */
+}
+
+/* Styling for quiz options for better click feedback */
+.quiz-option-btn {
+    transition: background-color 0.2s, transform 0.2s;
+}
+.quiz-option-btn:hover {
+    transform: scale(1.03);
+}
+.quiz-option-btn.correct {
+    background-color: #34d399 !important; /* Tailwind green-400 */
+    color: white !important;
+}
+.quiz-option-btn.wrong {
+    background-color: #f87171 !important; /* Tailwind red-400 */
+    color: white !important;
+}
+.quiz-option-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Styling for Font Awesome Icons */
+.fa-question-circle, .fa-wallet, .fa-shield-alt, .fa-tachometer-alt, .fa-lightbulb, .fa-user-shield, .fa-coins, .fa-brain {
+    margin-left: 0.5rem;
+    color: #60a5fa; /* Default blue accent */
 }

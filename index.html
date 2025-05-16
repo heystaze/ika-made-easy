@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,88 +6,188 @@
     <title>Ika Made Easy with Ika-chan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="bg-gray-900 text-white">
-    <!-- Header -->
-    <header class="bg-gray-800 py-4 text-center">
-        <img id="ika-logo" src="https://i.postimg.cc/26QJ7F4B/obxk-M0-Ch-400x400.png" alt="Ika Logo" class="h-16 mx-auto">
+<body class="bg-gray-900 text-white pt-20"> <header class="bg-gray-800 py-4 text-center fixed top-0 left-0 right-0 z-50 shadow-lg">
+        <img id="ika-logo" src="https://i.postimg.cc/26QJ7F4B/obxk-M0-Ch-400x400.png" alt="Ika Logo" class="h-12 mx-auto">
+         <nav class="mt-2">
+            <a href="#what-is-ika" class="text-gray-300 hover:text-blue-400 px-3">What is Ika?</a>
+            <a href="#dwallets" class="text-gray-300 hover:text-blue-400 px-3">dWallets</a>
+            <a href="#2pc-mpc" class="text-gray-300 hover:text-blue-400 px-3">2PC-MPC</a>
+            <a href="#use-cases" class="text-gray-300 hover:text-blue-400 px-3">Use Cases</a>
+            <a href="#security" class="text-gray-300 hover:text-blue-400 px-3">Security</a>
+            <a href="#tokenomics" class="text-gray-300 hover:text-blue-400 px-3">IKA Token</a>
+            <a href="#quiz" class="text-gray-300 hover:text-blue-400 px-3">Quiz</a>
+        </nav>
     </header>
 
-<!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-blue-600 to-purple-600 py-16 text-center">
+    <section class="relative bg-gradient-to-r from-blue-600 to-purple-600 py-20 text-center">
         <h1 class="text-5xl font-bold">Ika Made Easy</h1>
-        <p class="mt-4 text-xl">Explore Ika with Ika-chan!</p>
+        <p class="mt-4 text-xl">Explore the world of Ika with Ika-chan!</p>
         <div class="relative inline-block mt-8">
-            <img id="ika-chan" src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan Mascot" class="h-48 mx-auto">
+            <img id="ika-chan" src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-48 mx-auto bounce">
             <div class="speech-bubble absolute top-1/2 left-3/4 transform -translate-y-1/2 translate-x-4 bg-white text-black p-4 rounded-lg shadow-lg">
-                <p>Hi, I’m Ika-chan! Let’s explore Ika together! 🚀</p>
+                <p>Hi, I’m Ika-chan! Let’s dive into Ika together! 🚀</p>
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto py-12 px-4">
-        <!-- What is Ika? -->
-        <section class="mb-12 flex items-start">
-            <img src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-24 mr-4">
-            <div>
-                <h2 class="text-3xl font-bold text-blue-400 mb-4">What is Ika?</h2>
-                <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
-                    <p>Imagine a galaxy where blockchain planets (like Bitcoin, Ethereum) don’t talk to each other. Ika is like a super-fast, secure courier service that connects them, letting assets zoom between planets safely without middlemen!</p>
+    <main class="max-w-5xl mx-auto py-12 px-4">
+        <section id="what-is-ika" class="mb-16 scroll-mt-20">
+            <div class="flex items-start">
+                <img src="https://i.postimg.cc/bvvgg7y4/Screenshot-2025-05-16-141057.jpg" alt="Ika-chan thinking" class="h-24 mr-6 ika-chan-section-icon"> <div>
+                    <h2 class="text-4xl font-bold text-blue-400 mb-4">What is Ika? <i class="fas fa-question-circle text-3xl"></i></h2>
+                    <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                        <p class="text-lg">Imagine a galaxy where blockchain planets (like Bitcoin, Ethereum) don’t easily talk to each other. Ika is like a super-fast, secure courier service that connects them, letting assets and information zoom between these planets safely without needing traditional middlemen! It aims to solve major blockchain challenges like interoperability, scalability, and decentralization using a Zero Trust cryptographic framework.</p>
+                        <p class="mt-3 text-md text-gray-400">[Source: Abstract, Section 1]</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- dWallets -->
-        <section class="mb-12 flex items-start">
-            <img src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-24 mr-4">
-            <div>
-                <h2 class="text-3xl font-bold text-blue-400 mb-4">Why dWallets Rock</h2>
-                <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
-                    <p>dWallets are like smart space vaults. They hold your assets (BTC, ETH, etc.) and follow rules you set, like “only send funds if my friends approve.” They work across all blockchain planets and are super secure!</p>
+        <section id="dwallets" class="mb-16 scroll-mt-20">
+             <div class="flex items-start">
+                <img src="https://i.postimg.cc/PxXC1Hd8/Screenshot-2025-05-16-141254.jpg" alt="Ika-chan with a vault" class="h-24 mr-6 ika-chan-section-icon"> <div>
+                    <h2 class="text-4xl font-bold text-blue-400 mb-4">dWallets: Programmable & Transferable <i class="fas fa-wallet text-3xl"></i></h2>
+                    <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow mb-6">
+                        <p class="text-lg">dWallets are like smart, programmable space vaults. They are a new kind of infrastructure that can control accounts on different blockchains (e.g., Sui, Bitcoin, Ethereum). Smart contracts can tell a dWallet how to behave, like setting rules for sending funds: "only send if my friends approve," or "execute this trade when the market hits a certain price."</p>
+                        <p class="mt-4 text-lg"><strong>Key Features of dWallets:</strong></p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                            <li><strong>Cross-Chain Control:</strong> Manage assets and sign transactions on multiple blockchains.</li>
+                            <li><strong>Programmable:</strong> Developers can integrate them with smart contracts to enforce custom logic and automate complex workflows.</li>
+                            <li><strong>Transferable:</strong> A dWallet itself can be securely transferred between users or smart contracts – a unique feature by Ika! This is great for DAOs managing treasuries or DeFi protocols reassigning collateral.</li>
+                            <li><strong>Secure:</strong> Built on the 2PC-MPC protocol, their "private key" is split into shares, so no single entity has full control.</li>
+                        </ul>
+                        <p class="mt-3 text-md text-gray-400">[Source: Section 3.1]</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2PC-MPC Protocol -->
-        <section class="mb-12 flex items-start">
-            <img src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-24 mr-4">
-            <div>
-                <h2 class="text-3xl font-bold text-blue-400 mb-4">The 2PC-MPC Magic</h2>
-                <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
-                    <p>Think of 2PC-MPC as a spaceship crew splitting a secret code. No one person has the full code, so no one can steal it. They work together to unlock the vault only when you say so, keeping everything safe!</p>
+        <section id="2pc-mpc" class="mb-16 scroll-mt-20">
+            <div class="flex items-start">
+                <img src="https://i.postimg.cc/YqGzv6nB/Screenshot-2025-05-16-141424.jpg" alt="Ika-chan collaborating" class="h-24 mr-6 ika-chan-section-icon"> <div>
+                    <h2 class="text-4xl font-bold text-blue-400 mb-4">The Magic Behind Security: 2PC-MPC <i class="fas fa-shield-alt text-3xl"></i></h2>
+                    <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                        <p class="text-lg">The 2PC-MPC (Two-Party Computation - Multi-Party Computation) protocol is the cryptographic engine powering Ika's security. Think of it as a high-tech spaceship crew that needs multiple members to agree and act together to perform critical operations.</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                            <li><strong>Distributed Keys:</strong> During Distributed Key Generation (DKG), two secret shares are created. One is kept by the user, and the other is encrypted and managed by the Ika network. The full private key is never reconstructed in one place!</li>
+                            <li><strong>Collaborative Signing:</strong> To sign a transaction, both the user and a threshold of network participants must collaborate. No single party can act alone.</li>
+                            <li><strong>Zero Trust Option:</strong> User participation can be cryptographically required, ensuring you're always in control. For full automation, this user share can be made publicly available to be triggered by smart contract logic.</li>
+                            <li><strong>Performance:</strong> Uses presignatures (partially computed signatures) and broadcast communication (via Mysticeti) to be highly efficient and scalable.</li>
+                        </ul>
+                         <p class="mt-3 text-md text-gray-400">[Source: Section 3.2]</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Use Cases -->
-        <section class="mb-12 flex items-start">
-            <img src="https://i.postimg.cc/mrWdD1HX/Chat-GPT-Image-May-15-2025-10-44-04-AM.png" alt="Ika-chan" class="h-24 mr-4">
-            <div>
-                <h2 class="text-3xl font-bold text-blue-400 mb-4">Ika in Action</h2>
-                <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
-                    <p>Ika powers space stations like DeFi (trading without banks), DAOs (community-run groups), and atomic swaps (trading BTC for ETH directly). It’s fast, secure, and makes blockchain life easier!</p>
+        <section id="mysticeti" class="mb-16 scroll-mt-20">
+            <div class="flex items-start">
+                <img src="https://i.postimg.cc/mkcpZ0z0/Screenshot-2025-05-16-141613.jpg" alt="Ika-chan with speed lines" class="h-24 mr-6 ika-chan-section-icon"> <div>
+                    <h2 class="text-4xl font-bold text-blue-400 mb-4">Ensuring Speed & Reliability: Mysticeti <i class="fas fa-tachometer-alt text-3xl"></i></h2>
+                    <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                        <p class="text-lg">For Ika's 2PC-MPC protocol to work efficiently across its decentralized network, it needs a super-reliable and fast communication system. That's where Mysticeti comes in! Ika uses Mysticeti, a state-of-the-art consensus protocol (also used by the Sui blockchain), as its broadcast channel.</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                            <li><strong>DAG-based:</strong> Mysticeti uses a Directed Acyclic Graph (DAG) structure. This allows multiple messages to be processed simultaneously, unlike traditional blockchains that process one block at a time.</li>
+                            <li><strong>Low Latency & High Throughput:</strong> This design ensures that messages are broadcast quickly and the network can handle many operations at once, even if some parts of the network are slow or faulty.</li>
+                            <li><strong>Scalability:</strong> It helps the 2PC-MPC protocol scale efficiently as the number of participants in the Ika network grows.</li>
+                        </ul>
+                        <p class="mt-3 text-md text-gray-400">[Source: Section 3.2.3, 4.1]</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Quiz -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-400 mb-4">Test Your Ika IQ with Ika-chan!</h2>
-            <div class="p-6 bg-gray-800 rounded-lg">
-                <p class="mb-4">What’s a dWallet?</p>
-                <button class="quiz-btn px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 mr-2" data-answer="wrong">A digital coin</button>
-                <button class="quiz-btn px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 mr-2" data-answer="correct">A secure, programmable wallet</button>
-                <button class="quiz-btn px-4 py-2 bg-blue-600 rounded hover:bg-blue-700" data-answer="wrong">A blockchain</button>
-                <p id="quiz-result" class="mt-4 text-lg"></p>
+        <section id="use-cases" class="mb-16 scroll-mt-20">
+            <div class="flex items-start mb-6">
+                 <img src="https://i.postimg.cc/KjN72fQd/Screenshot-2025-05-16-141709.jpg" alt="Ika-chan pointing to ideas" class="h-24 mr-6 ika-chan-section-icon"> <div>
+                    <h2 class="text-4xl font-bold text-blue-400 mb-4">Ika in Action: Diverse Use Cases <i class="fas fa-lightbulb text-3xl"></i></h2>
+                    <p class="text-lg text-gray-300 mb-6">Ika's combination of security, programmability, and performance unlocks exciting possibilities across the blockchain world. Here are a few examples:</p>
+                </div>
             </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6 bg-gray-700 rounded-lg hover:shadow-2xl transition-shadow">
+                    <h3 class="text-2xl font-semibold text-teal-300 mb-2">Decentralized Finance (DeFi)</h3>
+                    <p class="text-gray-200">Automate liquidity management, execute complex trading strategies across chains, and manage collateral securely. Ika's high throughput is perfect for fast-paced DeFi operations. Example: Alice uses native BTC as collateral for a native ETH loan via a Sui smart contract using dWallets. <span class="text-sm text-gray-400">[Source: Section 5.1]</span></p>
+                </div>
+                <div class="card p-6 bg-gray-700 rounded-lg hover:shadow-2xl transition-shadow">
+                    <h3 class="text-2xl font-semibold text-teal-300 mb-2">DAOs (Decentralized Autonomous Organizations)</h3>
+                    <p class="text-gray-200">Manage multi-chain treasuries with programmable rules. Execute spending decisions on any chain based on community votes. dWallets can be transferred, allowing DAOs to restructure or spin off projects. <span class="text-sm text-gray-400">[Source: Section 5.4]</span></p>
+                </div>
+                <div class="card p-6 bg-gray-700 rounded-lg hover:shadow-2xl transition-shadow">
+                    <h3 class="text-2xl font-semibold text-teal-300 mb-2">Multi-Chain Atomic Swaps</h3>
+                    <p class="text-gray-200">Securely swap native assets directly between different blockchains (e.g., BTC for ETH) without intermediaries or wrapped tokens. Two dWallets collaborate to ensure the swap is atomic – either both sides happen, or neither does. <span class="text-sm text-gray-400">[Source: Section 5.5]</span></p>
+                </div>
+                <div class="card p-6 bg-gray-700 rounded-lg hover:shadow-2xl transition-shadow">
+                    <h3 class="text-2xl font-semibold text-teal-300 mb-2">Gaming and NFTs</h3>
+                    <p class="text-gray-200">Manage player-owned in-game assets with custom rules. Securely transfer valuable NFTs or even entire multi-chain NFT portfolios with programmable conditions. <span class="text-sm text-gray-400">[Source: Section 5.2]</span></p>
+                </div>
+                 <div class="card p-6 bg-gray-700 rounded-lg hover:shadow-2xl transition-shadow">
+                    <h3 class="text-2xl font-semibold text-teal-300 mb-2">Retail User Custody</h3>
+                    <p class="text-gray-200">Users get enhanced security as signing is distributed. dWallets can enable features like programmable recovery (e.g., social recovery), spending limits, and managing assets across multiple chains from one place. <span class="text-sm text-gray-400">[Source: Section 5.6]</span></p>
+                </div>
+                <div class="card p-6 bg-gray-700 rounded-lg hover:shadow-2xl transition-shadow">
+                    <h3 class="text-2xl font-semibold text-teal-300 mb-2">Institutional & Enterprise</h3>
+                    <p class="text-gray-200">Corporations can automate fund disbursements, enforce multi-signature approvals for large transactions, and manage cross-border payments with audibility and compliance. <span class="text-sm text-gray-400">[Source: Section 5.3]</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="security" class="mb-16 scroll-mt-20">
+            <div class="flex items-start">
+                <img src="https://i.postimg.cc/25k1pYg8/Screenshot-2025-05-16-141837.jpg" alt="Ika-chan with a large shield" class="h-24 mr-6 ika-chan-section-icon"> <div>
+                    <h2 class="text-4xl font-bold text-blue-400 mb-4">Ika Security: A Multi-Layered Approach <i class="fas fa-user-shield text-3xl"></i></h2>
+                    <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                        <p class="text-lg">Ika is designed with security at its core, leveraging several layers:</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                            <li><strong>Sui Foundation:</strong> Ika builds on a fork of Sui's codebase, inheriting its robust security features, including the Mysticeti consensus and the safety-focused Move programming language.</li>
+                            <li><strong>2PC-MPC Protocol:</strong> As discussed, this ensures keys are never concentrated and requires collaboration for operations.</li>
+                            <li><strong>Economic Security (Proof of Stake):</strong> Signers stake IKA tokens, aligning their financial incentives with honest network behavior. Malicious actions could lead to losing their stake.</li>
+                            <li><strong>Zero Trust Architecture:</strong> In its ideal setup, user participation is cryptographically required, minimizing reliance on intermediaries.</li>
+                            <li><strong>Smart Contract Security:</strong> While powerful, security also depends on well-audited smart contracts that interact with dWallets.</li>
+                            <li><strong>End-User Security:</strong> Users still play a role in safeguarding their own shares and authentication methods.</li>
+                        </ul>
+                        <p class="mt-3 text-md text-gray-400">[Source: Section 4, 4.1, 4.2, 4.6]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="tokenomics" class="mb-16 scroll-mt-20">
+            <div class="flex items-start">
+                 <img src="https://i.postimg.cc/1tLwwt35/Screenshot-2025-05-16-141901.jpg" alt="Ika-chan with a coin" class="h-24 mr-6 ika-chan-section-icon"> <div>
+                    <h2 class="text-4xl font-bold text-blue-400 mb-4">The IKA Token: Powering the Ecosystem <i class="fas fa-coins text-3xl"></i></h2>
+                    <div class="card p-6 bg-gray-800 rounded-lg hover:shadow-xl transition-shadow">
+                        <p class="text-lg">The IKA token is the native currency of the Ika network, playing several vital roles:</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+                            <li><strong>Staking:</strong> Signers stake IKA tokens to participate in securing the network and validating transactions through the 2PC-MPC protocol. Delegators can also stake their tokens to support signers and earn rewards.</li>
+                            <li><strong>Gas Fees:</strong> Network operations, like creating a dWallet (DKG) or signing transactions, require gas fees paid in IKA. This rewards signers and prevents spam.</li>
+                            <li><strong>Governance:</strong> IKA token holders can participate in on-chain governance, voting on proposals for protocol upgrades, economic adjustments, and other network changes.</li>
+                        </ul>
+                        <p class="mt-2 text-lg">This model aims to ensure the network remains secure, scalable, and adapts to the community's needs.</p>
+                        <p class="mt-3 text-md text-gray-400">[Source: Section 6]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="mb-12 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-blue-400 mb-6 text-center">Test Your Ika IQ with Ika-chan! <i class="fas fa-brain text-3xl"></i></h2>
+            <div class="p-8 bg-gray-800 rounded-lg shadow-2xl">
+                <div id="quiz-container">
+                    </div>
+                <button id="next-question-btn" class="mt-6 px-6 py-3 bg-purple-600 rounded hover:bg-purple-700 text-lg hidden">Next Question</button>
+                <div id="quiz-feedback" class="mt-4 text-xl"></div>
+                <img id="ika-chan-quiz" src="https://i.postimg.cc/63mJhkkQ/Screenshot-2025-05-16-142032.jpg" alt="Ika-chan, the quiz helper character" class="h-32 mx-auto mt-4 max-w-full"> </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 py-6 text-center">
-        <img src="https://i.postimg.cc/26QJ7F4B/obxk-M0-Ch-400x400.png" alt="Ika Logo" class="h-12 mx-auto mb-2">
-        <p>Built with ❤️ for Ika enthusiasts | Guided by Ika-chan</p>
+    <footer class="bg-gray-800 py-8 text-center border-t border-gray-700">
+        <img src="https://i.postimg.cc/26QJ7F4B/obxk-M0-Ch-400x400.png" alt="Ika Logo" class="h-12 mx-auto mb-3">
+        <p class="text-gray-400">Built by heystaze with ❤️ for Ika enthusiasts | Guided by Ika-chan</p>
+        <p class="text-sm text-gray-500 mt-2">Last Updated: May 2025</p>
     </footer>
 
     <script src="script.js"></script>
